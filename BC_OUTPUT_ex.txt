@@ -1,0 +1,101 @@
+PART 1. Dữ liệu
+  1) Tập luật
+    R1: S01->D1
+    R2: S01,S02->D1
+    R3: S02,S04->D1
+    R4: S04,S07->D1
+    R5: S07,S08->D1
+    R6: S08->D1
+    R7: S01->D1
+    R8: S01,S02->D1
+    R9: S02,S03->D1
+    R10: S03,S05->D1
+    R11: S05,S07->D1
+    R12: S07,S08->D1
+    R13: S08->D1
+    R14: S01->D1
+    R15: S01,S02->D1
+    R16: S02,S03->D1
+    R17: S03,S07->D1
+    R18: S07,S08->D1
+    R19: S08,S18->D1
+    R20: S18->D1
+    R21: S01->D1
+    R22: S01,S02->D1
+    R23: S02,S03->D1
+    R24: S03,S07->D1
+    R25: S07,S23->D1
+    R26: S23->D1
+    R27: S09->D2
+    R28: S09,S10->D2
+    R29: S10,S14->D2
+    R30: S14,S17->D2
+    R31: S17,S16->D2
+    R32: S16->D2
+    R33: S09->D2
+    R34: S09,S10->D2
+    R35: S10,S14->D2
+    R36: S14,S17->D2
+    R37: S17,S19->D2
+    R38: S19->D2
+    R39: S03->D3
+    R40: S03,S05->D3
+    R41: S05,S09->D3
+    R42: S09,S11->D3
+    R43: S11,S20->D3
+    R44: S20,S21->D3
+    R45: S21,S06->D3
+    R46: S06->D3
+    R47: S03->D3
+    R48: S03,S05->D3
+    R49: S05,S09->D3
+    R50: S09,S11->D3
+    R51: S11,S20->D3
+    R52: S20,S21->D3
+    R53: S21,S12->D3
+    R54: S12->D3
+    R55: S03->D3
+    R56: S03,S05->D3
+    R57: S05,S09->D3
+    R58: S09,S11->D3
+    R59: S11,S20->D3
+    R60: S20,S21->D3
+    R61: S21,S13->D3
+    R62: S13->D3
+    R63: S01->D4
+    R64: S01,S09->D4
+    R65: S09,S10->D4
+    R66: S10,S15->D4
+    R67: S15,S17->D4
+    R68: S17->D4
+    R69: S01->D5
+    R70: S01,S09->D5
+    R71: S09,S10->D5
+    R72: S10,S15->D5
+    R73: S15->D5
+    R74: S01->D6
+    R75: S01,S02->D6
+    R76: S02,S08->D6
+    R77: S08,S07->D6
+    R78: S07,S10->D6
+    R79: S10->D6
+    R80: S01->D6
+    R81: S01,S02->D6
+    R82: S02,S06->D6
+    R83: S06,S08->D6
+    R84: S08,S10->D6
+
+  2) Triệu chứng người dùng mắc phải
+    S03, S12, S13, S21, S01.
+
+  3) Bệnh nghi ngờ
+    D1.
+
+PART 2. Suy diễn
+  1) Goal D1. Tìm thấy luật R1:S01->D1. Các goals mới cần chứng mình là S01.
+  2) -Goal S01. Cập nhật triệu chứng S01, bởi vì được tìm thấy trong tập triệu chứng gốc S03, S12, S13, S21, S01. Trả về thành công.
+  3) ==>Goal D1. Đã được chứng minh, Trả về thành công
+
+PART 3. Kết quả
+  1) Goal D1 được chứng minh.
+  2) Road: R1.
